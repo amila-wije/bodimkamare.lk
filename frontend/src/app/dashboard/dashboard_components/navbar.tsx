@@ -30,11 +30,11 @@ export default function Navbar() {
 
         {/* Desktop Menu */}
         <div className="hidden md:flex items-center space-x-4 md:space-x-8">
-          <a href="/" className="text-gray-500 hover:text-gray-800 dark:text-gray-300 dark:hover:text-white transition-colors">Home</a>
-          <a href="/properties" className="text-gray-500 hover:text-gray-800 dark:text-gray-300 dark:hover:text-white transition-colors">Properties</a>
-          <a href="/about" className="text-gray-500 hover:text-gray-800 dark:text-gray-300 dark:hover:text-white transition-colors">About</a>
-          <a href="/contact" className="text-gray-500 hover:text-gray-800 dark:text-gray-300 dark:hover:text-white transition-colors">Contact</a>
-          
+          <link href="/" className="text-gray-500 hover:text-gray-800 dark:text-gray-300 dark:hover:text-white transition-colors">Home</link>
+          <link href="/properties" className="text-gray-500 hover:text-gray-800 dark:text-gray-300 dark:hover:text-white transition-colors">Properties</link>
+          <link href="/about" className="text-gray-500 hover:text-gray-800 dark:text-gray-300 dark:hover:text-white transition-colors">About</link>
+          <link href="/contact" className="text-gray-500 hover:text-gray-800 dark:text-gray-300 dark:hover:text-white transition-colors">Contact</link>
+
           {/* Dark Mode Toggle Button */}
           <Button
             variant="outline"
