@@ -56,7 +56,7 @@ export default function LandingPage() {
         <div className={`flex-1 max-w-2xl transition-all duration-1000 transform ${isVisible ? 'translate-x-0 opacity-100' : '-translate-x-10 opacity-0'}`}>
           <div className="inline-flex items-center space-x-2 bg-gray-100/10 dark:bg-gray-800/20 backdrop-blur-sm rounded-full px-4 mb-8">
             <div className="w-2 h-2 bg-green-400 rounded-full animate-pulse"></div>
-            <span className="text-sm text-gray-600 dark:text-gray-300">🇱🇰 Sri Lanka's #1 Property Platform</span>
+            <span className="text-sm text-gray-600 dark:text-gray-300">🇱🇰 Sri Lanka&apos;s #1 Property Platform</span>
           </div>
 
           <h1 className="text-5xl lg:text-7xl font-bold mb-8 leading-tight">
