@@ -47,18 +47,19 @@ export default function LandingPage() {
   ];
 
   return (
-    <div className="min-h-screen bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100 overflow-hidden">
+    <div className="min-h-screen dark:bg-gray-900 text-gray-900 dark:text-gray-100 overflow-hidden">
       <Navbar />
-
+      <img src="/img1.jpg" alt="Background Pattern" className="absolute inset-0 w-full h-full object-cover opacity-10 dark:opacity-20 pointer-events-none" />
       {/* Hero Section */}
       <div className="relative z-10 flex flex-col lg:flex-row items-center justify-between px-6 lg:px-120 py-10 min-h-screen">
         {/* Left Side */}
-        <div className={`flex-1 max-w-2xl transition-all duration-1000 transform ${isVisible ? 'translate-x-0 opacity-100' : '-translate-x-10 opacity-0'}`}>
-          <div className="inline-flex items-center space-x-2 bg-gray-100/10 dark:bg-gray-800/20 backdrop-blur-sm rounded-full px-4 mb-8">
+        <div className={`flex-1 max-w-2xl transition-all  duration-1000 transform ${isVisible ? 'translate-x-0 opacity-100' : '-translate-x-10 opacity-0'}`}>
+          <div className="inline-flex items-center space-x-2 bg-gray-500/10 dark:bg-gray-800/20 backdrop-blur-sm rounded-full px-4 mb-8">
+          
             <div className="w-2 h-2 bg-green-400 rounded-full animate-pulse"></div>
-            <span className="text-sm text-gray-600 dark:text-gray-300">🇱🇰 Sri Lanka&apos;s #1 Property Platform</span>
+            <span className="text-sm text-gray-600 dark:text-gray-300">🇱🇰 Sri Lanka's #1 Property Platform</span>
           </div>
-
+          
           <h1 className="text-5xl lg:text-7xl font-bold mb-8 leading-tight">
             Find Your
             <span className="block bg-gradient-to-r from-purple-400 via-pink-400 to-cyan-400 bg-clip-text text-transparent">
@@ -91,9 +92,10 @@ export default function LandingPage() {
             ))}
           </div>
         </div>
+        
 
         {/* Right Side */}
-        <div className={`flex-1 flex justify-center lg:justify-end mt-16 lg:mt-0 transition-all duration-1000 delay-300 transform ${isVisible ? 'translate-x-0 opacity-100' : 'translate-x-10 opacity-0'}`}>
+        <div className={`flex-1 flex justify-center lg:justify-end mt-10 lg:mt-0 transition-all duration-1000 delay-300 transform ${isVisible ? 'translate-x-0 opacity-100' : 'translate-x-10 opacity-0'}`}>
           <div className="relative">
             <div className="relative w-80 h-96 lg:w-96 lg:h-[500px] rounded-3xl overflow-hidden shadow-2xl shadow-purple-500/20 dark:shadow-purple-700/30 transform rotate-3 hover:rotate-0 transition-transform duration-500">
               <div className="absolute inset-0 bg-gradient-to-t from-purple-600/30 to-transparent z-10"></div>
@@ -115,7 +117,7 @@ export default function LandingPage() {
       </div>
 
       {/* CTA Section */}
-      <div className="relative z-10 px-6 lg:px-24 py-20">
+      <div className="relative z-10 px-6 lg:px-24 py-20 mt-[-180px]">
         <div className="bg-gradient-to-r from-purple-500/20 to-cyan-500/20 dark:from-purple-600/30 dark:to-cyan-600/30 backdrop-blur-sm border border-gray-200 dark:border-gray-700 rounded-3xl p-12 text-center">
           <h2 className="text-4xl lg:text-5xl font-bold mb-6 text-gray-900 dark:text-gray-100">
             Ready to Find Your
