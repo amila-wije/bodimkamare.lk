@@ -19,7 +19,7 @@ export default function Navbar() {
 
   return (
     <>
-      <nav className="relative z-50 flex items-center justify-between px-6 lg:px-24 py-6 bg-blue-100 dark:bg-gray-700 transition-colors">
+      <nav className="relative z-50 flex items-center justify-between px-6 lg:px-24 py-6 bg-blue-100 dark:bg-gray-800 transition-colors">
         {/* Logo Section */}
         <div className="flex items-center space-x-2">
           <div className="w-12 h-12 sm:w-16 sm:h-16 bg-gradient-to-r from-purple-500 to-cyan-500 rounded-lg flex items-center justify-center">
@@ -46,7 +46,7 @@ export default function Navbar() {
             className="relative"
           >
             <Sun className={`h-5 w-5 transition-all ${theme === "dark" ? "scale-0 -rotate-90" : "scale-100 rotate-0"}`} />
-            <Moon className={`absolute h-5 w-5 transition-all ${theme === "dark" ? "scale-100 rotate-0" : "scale-0 rotate-90"}`} />
+            <Moon className={`absolute h-5 w-5 transition-all  ${theme === "dark" ? "scale-100 rotate-0" : "scale-0 rotate-90"}`} />
             <span className="sr-only">Toggle theme</span>
           </Button>
 
@@ -80,7 +80,9 @@ export default function Navbar() {
 
       {/* Mobile Dropdown Menu */}
       {isOpen && (
+
         <div className="md:hidden bg-blue-50 dark:bg-gray-800 px-6 py-4 space-y-4 shadow-lg transition-colors">
+           <Link href="/" className="block text-gray-700 dark:text-gray-200 hover:text-gray-900 dark:hover:text-white transition-colors">Home</Link>
           <Link href="/properties" className="block text-gray-700 dark:text-gray-200 hover:text-gray-900 dark:hover:text-white transition-colors">Properties</Link>
           <Link href="/about" className="block text-gray-700 dark:text-gray-200 hover:text-gray-900 dark:hover:text-white transition-colors">About</Link>
           <Link href="/contact" className="block text-gray-700 dark:text-gray-200 hover:text-gray-900 dark:hover:text-white transition-colors">Contact</Link>
