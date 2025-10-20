@@ -4,6 +4,8 @@ import React, { useState, useEffect } from "react";
 import { Home, Menu, X, Sun, Moon } from "lucide-react";
 import { useTheme } from "next-themes";
 import { Button } from "../../../components/ui/button";
+import { SparklesText } from "@/components/ui/sparkles-text"
+import Link from "next/link";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -17,24 +19,25 @@ export default function Navbar() {
 
   return (
     <>
-      <nav className="relative z-50 flex items-center justify-between px-6 lg:px-24 py-6 bg-blue-100 dark:bg-gray-900 transition-colors">
+      <nav className="relative z-50 flex items-center justify-between px-6 lg:px-24 py-6 bg-blue-100 dark:bg-gray-700 transition-colors">
         {/* Logo Section */}
         <div className="flex items-center space-x-2">
           <div className="w-12 h-12 sm:w-16 sm:h-16 bg-gradient-to-r from-purple-500 to-cyan-500 rounded-lg flex items-center justify-center">
             <Home className="w-6 h-6 text-gray-900 dark:text-gray-200" />
           </div>
           <span className="text-xl sm:text-2xl md:text-3xl font-bold bg-gradient-to-r from-purple-400 to-cyan-400 bg-clip-text text-transparent">
-            Bodimkamare.lk
+            <SparklesText>Bodimkamare.lk</SparklesText>
           </span>
         </div>
+        
 
         {/* Desktop Menu */}
         <div className="hidden md:flex items-center space-x-4 md:space-x-8">
-          <a href="/" className="text-gray-500 hover:text-gray-800 dark:text-gray-300 dark:hover:text-white transition-colors">Home</a>
-          <a href="/properties" className="text-gray-500 hover:text-gray-800 dark:text-gray-300 dark:hover:text-white transition-colors">Properties</a>
-          <a href="/about" className="text-gray-500 hover:text-gray-800 dark:text-gray-300 dark:hover:text-white transition-colors">About</a>
-          <a href="/contact" className="text-gray-500 hover:text-gray-800 dark:text-gray-300 dark:hover:text-white transition-colors">Contact</a>
-          
+          <Link href="/" className="text-gray-500 hover:text-gray-800 dark:text-gray-300 dark:hover:text-white transition-colors">Home</Link>
+          <Link href="/properties" className="text-gray-500 hover:text-gray-800 dark:text-gray-300 dark:hover:text-white transition-colors">Properties</Link>
+          <Link href="/about" className="text-gray-500 hover:text-gray-800 dark:text-gray-300 dark:hover:text-white transition-colors">About</Link>
+          <Link href="/contact" className="text-gray-500 hover:text-gray-800 dark:text-gray-300 dark:hover:text-white transition-colors">Contact</Link>
+
           {/* Dark Mode Toggle Button */}
           <Button
             variant="outline"
@@ -78,9 +81,9 @@ export default function Navbar() {
       {/* Mobile Dropdown Menu */}
       {isOpen && (
         <div className="md:hidden bg-blue-50 dark:bg-gray-800 px-6 py-4 space-y-4 shadow-lg transition-colors">
-          <a href="/properties" className="block text-gray-700 dark:text-gray-200 hover:text-gray-900 dark:hover:text-white transition-colors">Properties</a>
-          <a href="/about" className="block text-gray-700 dark:text-gray-200 hover:text-gray-900 dark:hover:text-white transition-colors">About</a>
-          <a href="/contact" className="block text-gray-700 dark:text-gray-200 hover:text-gray-900 dark:hover:text-white transition-colors">Contact</a>
+          <Link href="/properties" className="block text-gray-700 dark:text-gray-200 hover:text-gray-900 dark:hover:text-white transition-colors">Properties</Link>
+          <Link href="/about" className="block text-gray-700 dark:text-gray-200 hover:text-gray-900 dark:hover:text-white transition-colors">About</Link>
+          <Link href="/contact" className="block text-gray-700 dark:text-gray-200 hover:text-gray-900 dark:hover:text-white transition-colors">Contact</Link>
           <button className="w-full bg-gradient-to-r from-purple-500 to-cyan-500 px-6 py-3 rounded-full text-white font-medium hover:shadow-lg hover:shadow-purple-500/25 transition-all duration-300 transform hover:scale-105">
             Sign In
           </button>

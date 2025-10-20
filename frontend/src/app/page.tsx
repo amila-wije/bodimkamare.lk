@@ -57,7 +57,7 @@ export default function LandingPage() {
           <div className="inline-flex items-center space-x-2 bg-gray-500/10 dark:bg-gray-800/20 backdrop-blur-sm rounded-full px-4 mb-8">
           
             <div className="w-2 h-2 bg-green-400 rounded-full animate-pulse"></div>
-            <span className="text-sm text-gray-600 dark:text-gray-300">🇱🇰 Sri Lanka's #1 Property Platform</span>
+            <span className="text-sm text-gray-600 dark:text-gray-300">🇱🇰 Sri Lankas #1 Property Platform</span>
           </div>
           
           <h1 className="text-5xl lg:text-7xl font-bold mb-8 leading-tight">
