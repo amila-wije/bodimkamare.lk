@@ -12,14 +12,14 @@ export default function Properties() {
         setIsVisible(true);
     }, []);
     return (
-        <div className="min-h-screen bg-white-500 text-white overflow-hidden bg-white dark:bg-gray-900 transition-colors duration-300">
+        <div className="min-h-screen bg-white-500 text-white overflow-hidden bg-gray-200 dark:bg-gray-900 transition-colors duration-300">
             <Navbar/>
             <div className="flex justify-center mt-8">
-                        <h1 className='text-gray-800 p-4 rounded-lg inline-block text-xl sm:text-5xl dark:text-white bg-gray-200 w-full text-center dark:bg-gray-800'>
+                        <h1 className='text-gray-800 p-4 inline-block text-xl sm:text-5xl dark:text-white bg-gray-200 w-full text-center dark:bg-gray-800'>
                         <WordRotate words={["Explore Our Properties","Find your best Partner"]} />
                         </h1>
                 </div>
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 dark:bg-gray-900 p-8">
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 bg-blue-50  dark:bg-gray-900 p-8">
                     {cardsData.map((card) => (
                     <Card
                     key={card.id}
