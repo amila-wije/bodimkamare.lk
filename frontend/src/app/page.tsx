@@ -117,7 +117,7 @@ export default function LandingPage() {
       </div>
 
       {/* CTA Section */}
-      <div className="relative z-10 px-6 lg:px-24 py-20 mt-[-180px]">
+      <div className="relative z-10 px-6 lg:px-24 py-20 sm:mt-[-150px]">
         <div className="bg-gradient-to-r from-purple-500/20 to-cyan-500/20 dark:from-purple-600/30 dark:to-cyan-600/30 backdrop-blur-sm border border-gray-200 dark:border-gray-700 rounded-3xl p-12 text-center">
           <h2 className="text-4xl lg:text-5xl font-bold mb-6 text-gray-900 dark:text-gray-100">
             Ready to Find Your
@@ -127,7 +127,9 @@ export default function LandingPage() {
             Join thousands of satisfied customers who found their dream properties with us.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <button className="group bg-gradient-to-r from-purple-500 to-cyan-500 dark:from-purple-600 dark:to-cyan-600 px-8 py-4 rounded-full text-white font-semibold text-lg hover:shadow-2xl hover:shadow-purple-500/25 transition-all duration-300 transform hover:scale-105 flex items-center space-x-2">
+            <button 
+            onClick={handleClick}
+            className="group bg-gradient-to-r from-purple-500 to-cyan-500 dark:from-purple-600 dark:to-cyan-600 px-8 py-4 rounded-full text-white font-semibold text-lg hover:shadow-2xl hover:shadow-purple-500/25 transition-all duration-300 transform hover:scale-105 flex items-center space-x-2">
               <span>Start Your Search</span>
               <ChevronRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
             </button>
