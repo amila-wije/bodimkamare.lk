@@ -16,6 +16,14 @@ const cardsData = [
     kitchen: false,
     image: "/data/img2.jpeg",
   },
+  {
+    id: 3,
+    title: "Cozy Cottage",
+    for: true,
+    description: "A charming cottage surrounded by nature.",
+    kitchen: true,
+    image: "/data/image3.jpg",
+  }
 ];
 
 export default cardsData;
