@@ -95,9 +95,9 @@ export default function LandingPage() {
         
 
         {/* Right Side */}
-        <div className={`flex-1 flex justify-center lg:justify-end mt-10 lg:mt-0 transition-all duration-1000 delay-300 transform ${isVisible ? 'translate-x-0 opacity-100' : 'translate-x-10 opacity-0'}`}>
+        <div className={`flex-1 flex justify-center  lg:justify-end mt-30 sm:mt-0 transition-all duration-1000 delay-300 transform ${isVisible ? 'translate-x-0 opacity-100' : 'translate-x-10 opacity-0'}`}>
           <div className="relative">
-            <div className="relative w-80 h-96 lg:w-96 lg:h-[500px] rounded-3xl overflow-hidden shadow-2xl shadow-purple-500/20 dark:shadow-purple-700/30 transform rotate-3 hover:rotate-0 transition-transform duration-500">
+            <div className="relative w-80 h-96 lg:w-96 lg:h-[500px]  rounded-3xl overflow-hidden shadow-2xl shadow-purple-500/20 dark:shadow-purple-700/30 transform rotate-3 hover:rotate-0 transition-transform duration-500">
               <div className="absolute inset-0 bg-gradient-to-t from-purple-600/30 to-transparent z-10"></div>
               <img
                 src="https://images.unsplash.com/photo-1564013799919-ab600027ffc6?auto=format&fit=crop&w=500&q=80"
